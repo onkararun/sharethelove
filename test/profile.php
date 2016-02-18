@@ -7,9 +7,9 @@
 	}
 	else{
 		session_destroy();
-		//header('Location: index.php');
-		//ob_end_flush();		
-		echo "<script> location.href='http://sharethelove.co.in/index.php' </script>";
+		header('Location: index.php');
+		ob_end_flush();		
+		//echo "<script> location.href='http://sharethelove.co.in/index.php' </script>";
 	}
 
    
@@ -94,14 +94,15 @@
 			}
 	   }
 
-		//header('Location: home.php');
-		//ob_end_flush();
-	   echo "<script> location.href='http://sharethelove.co.in/home.php' </script>";
+		header('Location: home.php');
+		ob_end_flush();
+	   //echo "<script> location.href='http://sharethelove.co.in/home.php' </script>";
 
 	}
 	elseif(isset($_POST['btnProfileDelete'])){
 		$userid=$_SESSION['userid'];
 		$UDQ="delete from tbl_sign_up where  userid='$userid'";
+		//echo $UDQ; die;
 	    mysql_query($UDQ, $db); 
 
 		$count=mysql_affected_rows();
@@ -113,9 +114,9 @@
 		{
 			$status = "false";
 		}
-		//header('Location: logout.php?m='.$m);
-		//ob_end_flush();
-		echo "<script> location.href='http://sharethelove.co.in/logout.php?m='".$status."</script>";
+		header('Location: logout.php?m='.$status);
+		ob_end_flush();
+		//echo "<script> location.href='http://sharethelove.co.in/logout.php?m='".$status."</script>";
 	} 
 	elseif(isset($_SESSION['userid'])){
 		$loggedUser=$_SESSION['userid'];
@@ -159,9 +160,9 @@
 	}
 	else{
 		session_destroy();
-		//header('Location: index.php');
-		//ob_end_flush();
-		echo "<script> location.href='http://sharethelove.co.in/index.php' </script>";
+		header('Location: index.php');
+		ob_end_flush();
+		//echo "<script> location.href='http://sharethelove.co.in/index.php' </script>";
 	}
 ?>
 <!DOCTYPE html>
