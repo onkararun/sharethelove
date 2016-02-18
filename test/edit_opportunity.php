@@ -96,10 +96,10 @@ addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 function selectState(txt){
 	var state=txt;
 	$cname = $("select[name='district']");
-	if(state=='Delhi'){
-			$("select[name='district'] option").remove();
-			$("<option value='Delhi'>Delhi</option>").appendTo($cname);
-	}
+	// if(state=='Delhi'){
+	// 		$("select[name='district'] option").remove();
+	// 		$("<option value='Delhi'>Delhi</option>").appendTo($cname);
+	// }
 	if(state=='Himachal Pradesh'){
 			$("select[name='district'] option").remove();
 			$("<option value='Kangra'>Kangra</option>").appendTo($cname);
@@ -308,8 +308,11 @@ if(isset($_POST['updatelisting'])){
 					<td width="150px">Project Name</td><td colspan="3"><input type="text" class="required" name="prjName" id="prjName" value="<?php echo $LSTD[2] ; ?>" class="searchboxfull" /></td>
 				<tr>
 				<tr>
-					<td>State</td><td><select name="state" id="state" onchange="selectState(this.value);"><option value="" default>--</option>
-					<option value="Himachal Pradesh">Himachal Pradesh</option><option value="Delhi">Delhi</option>
+					<td>State</td>
+					<td>
+					<select name="state" id="state" onchange="selectState(this.value);">
+					<option value="" default>--</option>
+					<option value="Himachal Pradesh">Himachal Pradesh</option>
 					<option value="<?php echo $LSTD[3] ; ?>" selected="selected"><?php echo $LSTD[3] ; ?></option></select></td>
 					<td>District</td><td><select name="district" id="district"><option value="<?php echo $LSTD[4] ; ?>" selected="selected"><?php echo $LSTD[4] ; ?></option></select></td>
 				<tr>
