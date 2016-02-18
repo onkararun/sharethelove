@@ -1,0 +1,457 @@
+@font-face {
+    font-family:Neou-Bold ;
+    src: url("../fonts/Neou-Bold.ttf");
+}
+@font-face {
+    font-family: thonburi;
+    src: url("../fonts/thonburi.ttf");
+}
+@font-face {
+    font-family: HandVetica;
+    src: url("../fonts/HandVetica.ttf");
+}
+@font-face {
+    font-family: Alexs_Writing;
+    src: url("../fonts/Alexs_Writing.ttf");
+}
+@font-face {
+    font-family: Photographs;
+    src: url("../fonts/Photographs.ttf");
+}
+@font-face {
+    font-family:Austie Bost Roman Holiday Sketch;
+    src: url("../fonts/Austie Bost Roman Holiday Sketch.ttf");
+}
+body {
+    width: 100%;
+    max-width: 1000px; 
+    margin: 0 auto;
+   background-color:#F5F2ED;
+  
+}
+.top {
+    background-color: #c4ad9c;
+    height: 60px;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+}
+.pull-left{
+	width: auto;
+    display: inline-block;
+	padding-left:0px;
+    height: 100%;
+}
+.pull-left-txt ul {
+    margin-top: 2px;
+}
+.pull-left-txt li{
+	list-style: none;
+}
+.pull-left-txt li a {
+    color: #fff;
+    font-family: HandVetica;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing:2.2px;
+}
+.pull-left-logo {
+    float: left;
+    padding-left: 20px;
+    width: auto;
+}
+.pull-left-logo img {
+	width: 100%;
+}
+.pull-left-txt {
+    float: right;
+    width: auto;
+    height: 100%;
+}
+.pull-right {
+    display: inline-flex;
+    float: right;
+    width: auto;
+    position: relative;
+    height: 100%;
+    margin-right: 20px;
+}
+.main-menu {
+    width: auto;
+    margin-top: 5px
+}
+.main-menu > ul {
+    display: inline-flex;
+}
+.main-menu li {
+    list-style: outside none none;
+    padding-right: 31px;
+}
+.main-menu li a {
+    color: #3a2b2f;
+    text-decoration: none;
+    font-family:Neou-Bold;
+    font-size:17px;
+}
+.pull-right-loginbtn #login-trigger {
+    display: inline-block;
+    vertical-align: middle;
+}
+.pull-right-loginbtn #login-content {
+    display: none;
+    position: absolute;
+    top: 2.7em;
+    z-index: 99;
+    width: 200px;
+    background: url(../images/login_bg.png);
+    padding: .5em;
+    box-shadow: 0 2px 2px -1px rgba(0,0,0,.9);
+    border-radius: 5px;
+    border: solid 2px #435a72;
+    right: 0;
+
+}
+#login-content fieldset {
+    border: 0;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+}
+#login-content fieldset a {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+}
+#loginform input {
+    margin-bottom: 5px;
+    vertical-align: bottom;
+    margin: 2px;
+    padding: 0.2em 0.4em;
+    border-radius: 1em;
+    border-style: none;
+}
+#login-content #btnlogin {
+    background-color: #3a536c;
+    color: #FFF;
+    padding: 0.2em 1.5em;
+    text-transform: uppercase;
+}
+.pull-right-logoutbtn{
+    position: relative;
+    margin-top: 12px;
+}
+.pull-right-logoutbtn #logout-trigger {
+    display: inline-block;
+    vertical-align: middle;
+}
+.pull-right-logoutbtn ul {
+    display: none;
+    list-style: none;
+}
+.pull-right-logoutbtn ul li a {
+    color: #FFF;
+    padding: 0em 1em;
+    text-decoration: none;
+}
+.pull-right-logoutbtn:hover ul {
+    display: block;
+    position: absolute;
+    z-index: 5;
+    left: -22px;
+    top: -6px;
+    padding: 12px 10px 10px 10px;
+    width: 80px;
+    background: url(../images/drop-down-bg.png) center -1px no-repeat;
+}
+.pull-right-logoutbtn:hover ul li {
+    margin-bottom: 0.2em;
+    color: white;
+    display: block;
+    padding: 10px 0em;
+    text-align: center;
+    font-size: 13px;
+    line-height: 14px;
+}
+.pull-right-logoutbtn:hover ul li:hover {
+    background: url(../images/drop-down-bgb.png) center center no-repeat;
+}
+.pull-right-logoutbtn:hover ul li a {
+    padding: 0.2em;
+    font-size: 13px;
+}
+.main-menu ul li a:hover {
+    color: #FFF;
+}
+.title-1 {
+    padding-top: 35px;
+}
+.title2{
+    padding-top:1px;
+}
+.content-left
+{
+    width:49%;
+    margin:0;
+    padding:0;
+}
+.content-box {
+    background-color: #3a2b30;
+    color: #fff;
+    font-family: helvetica;
+    font-size: 12.5px;
+    margin-left: 23px;
+    width: 429px;
+}
+.tx {
+    padding: 13px;
+}
+.tx1 {
+    font-family: Austie Bost Roman Holiday Sketch;
+    font-size: 16.67px;
+    padding-left: 30px;
+}
+.content-box1 {
+    background-color: #423a47;
+    color: #fff;
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 429px;
+}
+.heading {
+    border: 5px solid #3a2b2f;
+    font-family: Photographs;
+    font-size: 18.75px;
+    text-align: center;
+}
+.para{
+   border: 5px solid #3a2b2f; 
+}
+.img-ft{
+    border-bottom:5px solid #3a2b2f;
+}
+.content-box2{
+    width:429px;
+    background-color:#423A47;
+    color:#fff;
+
+}
+.head {
+    border: 5px solid #3a2b2f;
+    font-family: Photographs;
+    font-size: 18.75px;
+    text-align: center;
+
+}
+.img-ft1{
+  border-bottom: 5px solid #3a2b2f;   
+}
+.top2 {
+    display: inline-block;
+    margin-left: 12px;
+    vertical-align: top;
+}
+.content-right {
+    margin: 0;
+    padding: 0;
+}
+.title-right1 {
+    padding-top: 35px;
+}
+.main-para{
+    margin-left:25px;
+}
+.main {
+    display: inline-block;
+    width: 100%;
+    background-image:url("../images/background1.jpg"); 
+}
+.top1 {
+    float: left;
+    width: 50%;
+}
+.para-right {
+    background-color: #3a2b30;
+    color: #fff;
+    font-family: helvetica;
+    font-size: 12.5px;
+    width: 429px;
+}
+.form-img {
+    background-color: #3a2b30;
+    color: #fff;
+    height: 260px;
+    width: 429px;
+}
+.fm-img {
+    background-image: url("../images/formback1.png");
+    background-repeat: no-repeat;
+    float: left;
+    height: 165px;
+    margin: 36px 0 0 52px;
+    padding-left: 20px;
+    width: 315px;
+}
+input {
+    border-radius: 50px;
+    box-sizing: border-box;
+    margin: 23px;
+    padding: 2%;
+}
+.title-right3 {
+    padding-top: 10px;
+}
+.cnt {
+    background-color: #3a2b30;
+    color: #fff;
+    font-family: helvetica;
+    font-size: 12.5px;
+    margin-top: 7px;
+    padding: 2px 0;
+    text-align: center;
+    width: 429px;
+}
+.inner-cnt {
+    background-color: #423a47;
+    letter-spacing: 2px;
+    margin: 0 auto;
+    width: 94%;
+    font-family:Alexs_Writing;
+    font-size:25px;
+}
+.test1{
+    padding:12px;
+}
+.frm {
+    background-color: #3a2b30;
+    color: #fff;
+    height: 424px;
+    width: 429px;
+}
+.frm-inner {
+    background-color: #47343a;
+    margin: 0 auto;
+    width: 400px;
+}
+.head-right {
+    padding: 2px;
+    text-align: center;
+    font-family:photographs;
+    font-size:25px;
+}
+textarea {
+    border-radius: 19px;
+    padding: 12px;
+}
+.frm-cnt {
+    padding: 10px;
+    text-align: center;
+}
+.frm-cnt > input {
+    border-radius: 10px;
+    margin: 10px;
+
+}
+button {
+    background-color: #344a61;
+    border: medium none;
+    border-radius: 14px;
+    color: white;
+    margin: 14px;
+    padding: 4px 20px;
+}
+.img-f {
+    border-bottom: 5px solid #3a2b2f;
+    border-top: 5px solid #3a2b2f;
+    display: inline-flex;
+    margin-top: 10px;
+    width: 429px;
+}
+footer{
+    background-color:#B99D88;
+    color:#fff;
+    float:left;
+    width: 100%;
+}
+.txt{
+    color:#fff;
+    padding-left:50px;
+    font-size:10px;
+}
+.innerimg{
+    display: inline-table;
+    width: 75%;
+    background-color: #372C30;
+    border-bottom-right-radius:2em;
+    border-bottom-left-radius:2em; 
+    border:2px solid #372C30;
+}
+textarea {
+    height: 20px;
+    margin: 0 0 21px;
+    padding: 0 0 74px 37px;
+    width: 149px;
+}
+.frm-inner tr {
+    text-align: center;
+}
+
+.ft-main {
+    width: 100%;
+    float: left;
+}
+.ft-left {
+    width: auto;
+    float: left;
+}
+.footer-right {
+    width: auto;
+    float: right;
+    text-align: center;
+    margin-right: 20px;
+    font-family: sans-serif;
+    font-size: 12px;
+    padding: 4px
+}
+.footer-nav {
+   list-style: none;
+}
+.footer-nav > li {
+    display: inline-block;
+}
+.footer-nav li a {
+    padding: 0 0.3em;
+    color: #fff;
+    text-decoration: none;
+}
+.share-address ul {
+    list-style: none;
+}
+.share-add-txt {
+    font-family: helvetica;
+    font-size: 13.5px;
+}
+.img-ft {
+    border-bottom: 5px solid #3a2b2f;
+    display: block;
+    padding-left: 20px;
+    padding: 5px 0 5px 20px;
+    background-color: #2A292A;
+    font-size: 13px;
+    font-family: helvetica;
+}
+.inner-wrapper {
+    display: block;
+    vertical-align: middle;
+    height: 40px;
+    line-height: 40px;
+}
+.inner-wrapper span {
+    display: inline-block;
+    vertical-align: top;
+}
+.inner-wrapper a {
+    vertical-align: middle;
+    display: inline-block;
+    line-height: normal;
+}

@@ -1,0 +1,13 @@
+delete from listings where listingID='6' and addedBy='1';
+: 
+delete from listings where listingID='7' and addedBy='1';
+delete from listings where listingID='8' and addedBy='1';
+delete from listings where listingID='9' and addedBy='1';
+delete from listings where listingID='10' and addedBy='1';
+delete from listings where listingID='11' and addedBy='1';
+delete from listings where listingID='12' and addedBy='1';
+delete from listings where listingID='13' and addedBy='1';
+delete from listings where listingID='4' and addedBy='2';
+delete from listings where listingID='3' and addedBy='2';
+delete from listings where listingID='2' and addedBy='2';
+delete from listings where listingID='16' and addedBy='2';

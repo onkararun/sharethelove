@@ -1,0 +1,39 @@
+(function(){
+    function previewImage(file) {
+        var galleryId = "gallery";
+
+        var gallery = document.getElementById(galleryId);
+        var imageType = /image.*/;
+
+        if (!file.type.match(imageType)) {
+            throw "File Type must be an image";
+        }
+
+        var thumb = document.createElement("div");
+        thumb.classList.add('thumbnail');
+
+        var img = document.createElement("img");
+        img.file = file;
+        thumb.appendChild(img);
+        gallery.appendChild(thumb);
+
+        // Using FileReader to display the image content
+        var reader = new FileReader();
+        reader.onload = (function(aImg) { return function(e) { aImg.src = e.target.result; }; })(img);
+        reader.readAsDataURL(file);
+    }
+
+    var uploadfiles = document.querySelector('#fileinput');
+    uploadfiles.addEventListener('change', function () {
+			var files = this.files;
+			if(files.length > 5){
+        		alert('Maximum 5 files allowed');
+        		$("#fileinput").val("");
+        		return false;
+			}else{
+	        for(var i=0; i<files.length; i++){
+	            previewImage(this.files[i]);
+	        }
+			}
+    }, false);
+})();

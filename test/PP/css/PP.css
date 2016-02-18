@@ -1,0 +1,418 @@
+@font-face {
+    font-family:Neou-Bold ;
+    src: url("../fonts/Neou-Bold.ttf");
+}
+@font-face {
+    font-family: thonburi;
+    src: url("../fonts/thonburi.ttf");
+}
+@font-face {
+    font-family: HandVetica;
+    src: url("../fonts/HandVetica.ttf");
+}
+@font-face {
+    font-family: Alexs_Writing;
+    src: url("../fonts/Alexs_Writing.ttf");
+}
+@font-face {
+    font-family: Photographs;
+    src: url("../fonts/Photographs.ttf");
+}
+@font-face {
+    font-family:Austie Bost Roman Holiday Sketch;
+    src: url("../fonts/Austie Bost Roman Holiday Sketch.ttf");
+}
+
+body {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.container {
+    background-color: #3B2B30;
+    width: 100%;
+    float: left;
+}
+
+.content-wrapper {
+    background: #c4b3ad none repeat scroll 0 0;
+    margin: 0 auto;
+    width: 90%;
+}
+.top {
+    background-color: #c4ad9c;
+    height: 60px;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+}
+.pull-left{
+	width: auto;
+    display: inline-block;
+	padding-left:0px;
+    height: 100%;
+}
+.pull-left-txt ul {
+    margin-top: 2px;
+}
+.pull-left-txt li{
+	list-style: none;
+}
+.pull-left-txt li a {
+    color: #fff;
+    font-family: handvetica;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing:2.2px;
+}
+.pull-left-logo {
+    float: left;
+    padding-left: 20px;
+    width: auto;
+}
+.pull-left-logo img {
+	width: 100%;
+}
+.pull-left-txt {
+    float: right;
+    width: auto;
+}
+.pull-right {
+    display: inline-flex;
+    float: right;
+    width: auto;
+    height: 100%;
+    margin-right: 20px;
+}
+.main-menu {
+    width: auto;
+    margin-top: 5px;
+}
+.main-menu > ul {
+    display: inline-flex;
+}
+.main-menu li {
+    list-style: outside none none;
+    padding-right: 31px;
+}
+.main-menu li a {
+    color: #3a2b2f;
+    text-decoration: none;
+}
+.pull-right-loginbtn #login-trigger {
+    display: inline-block;
+    vertical-align: middle;
+}
+.pull-right-loginbtn #login-content {
+    display: none;
+    position: absolute;
+    top: 2.7em;
+    z-index: 99;
+    width: 200px;
+    background: url(../images/login_bg.png);
+    padding: .5em;
+    box-shadow: 0 2px 2px -1px rgba(0,0,0,.9);
+    border-radius: 5px;
+    border: solid 2px #435a72;
+    right: 107px;
+
+}
+#login-content fieldset {
+    border: 0;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+}
+#login-content fieldset a {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+}
+#loginform input {
+    margin-bottom: 5px;
+    vertical-align: bottom;
+    margin: 2px;
+    padding: 0.2em 0.4em;
+    border-radius: 1em;
+    border-style: none;
+}
+#login-content #btnlogin {
+    background-color: #3a536c;
+    color: #FFF;
+    padding: 0.2em 1.5em;
+    text-transform: uppercase;
+}
+.stlove-logo {
+    text-align: center;
+}
+.stlove-logo > img {
+    margin: 30px 0 0;
+}
+.updated {
+    color: #323232;
+    font-family: tahoma;
+    font-size: 14px;
+    margin: 25px 0 15px 72px;
+}
+.ft-left {
+    background: #b99d88 none repeat scroll 0 0;
+    color: #fff;
+    float: left;
+    font-size: 15px;
+    width: auto;
+}
+
+/*.footer {
+    font-family: Tahoma;
+    font-size: 11px;
+    margin: 0 0 0 22px;
+    padding: 15px 0 20px;
+}*/
+
+.information-collect li {
+    list-style: outside none none;
+    margin: 2px 0 0;
+    padding: 0;
+}
+.information-collect img {
+    margin: 0 6px 0 0;
+}
+.p1 {
+    color: #323232;
+    font-family: Tahoma;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin: 26px 0 30px 72px;
+}
+.user-consent > p {
+    color: #323232;
+    font-family: Tahoma;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin: 26px 0 30px 72px;
+}
+.information-collect > p {
+    color: #323232;
+    font-family: Tahoma;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin: 7px 0 -4px 72px;
+}
+
+.information-collect li {
+    color: #323232;
+    font-family: Tahoma;
+    font-size: 13px;
+    letter-spacing: 2px;
+    list-style: outside none none;
+    margin: 2px 0 0 34px;
+    padding: 0;
+}
+.use-information > p {
+    color: #323232;
+    font-family: Tahoma;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin: 26px 0 -30px 72px;
+}
+.third-party > p {
+    color: #323232;
+    font-family: Tahoma;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin: 22px 0 -22px 72px;
+}
+.third-party-logo > img {
+    margin: 30px 0 0;
+}
+.children-privacy-logo > img {
+    margin: 18px 0 0;
+}
+.children-privacy > p {
+    color: #323232;
+    font-family: Tahoma;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin: 10px 0 20px 72px;
+}
+.cookies-analytics > p {
+    color: #323232;
+    font-family: Tahoma;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin: 20px 0 -12px 72px;
+}
+.web-beacons-logo > img {
+    margin: 30px 0 0;
+}
+.web-beacons > p {
+    color: #323232;
+    font-family: Tahoma;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin: 12px 0 18px 72px;
+}
+.links > p {
+	color: #323232;
+    font-family: Tahoma;
+    font-size: 14px;
+	 letter-spacing: 2px;
+    margin: 26px 0 30px 72px;
+}
+.review-information > p {
+    color: #323232;
+    font-family: Tahoma;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin: 9px 0 -12px 72px;
+}
+.newsletter-communication-logo > img {
+    margin: 30px 0 0;
+}
+.newsletter-communication > p {
+    color: #323232;
+    font-family: Tahoma;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin: 18px 0 -22px 72px;
+}
+.commitment-security-logo > img {
+    margin: 40px 0 0;
+}
+.commitment-security > p {
+    color: #323232;
+    font-family: Tahoma;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin: 12px 0 18px 72px;
+}
+.change-policy > p {
+    color: #323232;
+    font-family: Tahoma;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin: 11px 0 18px 72px;
+}
+
+.contact-us > p {
+    color: #323232;
+    font-family: Tahoma;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin: 8px 0 28px 72px;
+}
+/*footer {
+    background-color: #b99d88;
+    color: #fff;
+    float: left;
+    width: 100%;
+}
+.contact-us {
+    padding-bottom: 35px;
+}
+.ft-main {
+    width: 100%;
+    float: left;
+}
+.footer-right {
+    width: auto;
+    float: right;
+    text-align: center;
+    margin-right: 20px;
+    font-family: sans-serif;
+    font-size: 12px;
+    padding: 4px
+}
+.footer-nav {
+   list-style: none;
+}
+.footer-nav > li {
+    display: inline-block;
+}
+.footer-nav li a {
+    padding: 0 0.3em;
+    color: #fff;
+    text-decoration: none;
+}*/
+footer {
+    background-color: #b99d88;
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+    float: left;
+}
+.ft-main {
+    margin: 0 auto;
+    max-width: 90%;
+}
+.ft-left {
+    color: #fff;
+    display: inline-block;
+    width: auto;
+    font-size: 12px;
+}
+.footer-right {
+    float: right;
+    color: #fff;
+    width: auto;
+    font-family: sans-serif;
+    font-size: 12px;
+    text-align: center;
+    margin: 8px;
+}
+.footer-right > ul li {
+    display: inline-block;
+     padding-right: 2px;
+}
+.footer-nav li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0 0.3em;
+}
+.pull-right-logoutbtn{
+    position: relative;
+    margin-top: 12px;
+}
+.pull-right-logoutbtn #logout-trigger {
+    display: inline-block;
+    vertical-align: middle;
+}
+.pull-right-logoutbtn ul {
+    display: none;
+    list-style: none;
+}
+.pull-right-logoutbtn ul li a {
+    color: #FFF;
+    padding: 0em 1em;
+    text-decoration: none;
+}
+.pull-right-logoutbtn:hover ul {
+    display: block;
+    position: absolute;
+    z-index: 5;
+    left: -22px;
+    top: -6px;
+    padding: 12px 10px 10px 10px;
+    width: 80px;
+    background: url(../images/drop-down-bg.png) center -1px no-repeat;
+}
+.pull-right-logoutbtn:hover ul li {
+    margin-bottom: 0.2em;
+    color: white;
+    display: block;
+    padding: 10px 0em;
+    text-align: center;
+    font-size: 13px;
+    line-height: 14px;
+}
+.pull-right-logoutbtn:hover ul li:hover {
+    background: url(../images/drop-down-bgb.png) center center no-repeat;
+}
+.pull-right-logoutbtn:hover ul li a {
+    padding: 0.2em;
+    font-size: 13px;
+}
+.main-menu ul li a:hover {
+    color: #FFF;
+}
